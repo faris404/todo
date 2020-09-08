@@ -1,0 +1,22 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "simple todo app with MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "devServer":"nodemon app",
+    "client":"npm start --prefx cd views",
+    "dev":"concurrently \"npm run devServer\" \"npm run client\""
+  },
+  "author": "Muhammed Faris UM",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
